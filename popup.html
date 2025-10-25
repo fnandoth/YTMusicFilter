@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YouTube Music Filter</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="card">
+    <h1 class="title">🎵 YouTube Music Filter</h1>
+    <p class="subtitle">Manage blocked words</p>
+
+    <ul id="word-list" class="word-list"></ul>
+
+    <div class="input-group">
+      <input type="text" id="new-word" placeholder="Add new word..." />
+      <button id="add-word" title="Add word">
+        <span class="material-symbols">add</span>
+      </button>
+    </div>
+
+    <button id="clear-all" class="btn-danger">Clear All</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
