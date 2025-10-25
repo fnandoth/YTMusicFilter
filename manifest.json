@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Music Title Filter",
+  "version": "1.0",
+  "description": "Oculta canciones en YouTube Music según palabras en el título",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["*://music.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
