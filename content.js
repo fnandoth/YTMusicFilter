@@ -8,7 +8,6 @@ chrome.storage.local.get(["blockedWords"], ({ blockedWords: saved }) => {
 chrome.storage.onChanged.addListener((changes) => {
   if (changes.blockedWords) {
     blockedWords = changes.blockedWords.newValue || [];
-    console.log("[YTM Filter] Updated blocked words:", blockedWords);
   }
 });
 
